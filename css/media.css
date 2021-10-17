@@ -1,0 +1,11 @@
+@media(prefers-collor-scheme:dark){
+    :root{
+       --body:#313131; 
+       --text:#FFFFFF;
+
+    }
+}
+body{
+    border: var(--body);
+
+}

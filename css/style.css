@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --n400: 'notosans-regural';
+    --white: #ffffff;
+    --blackk: #313131;
+
+
+}
+
+.list_top {
+    display: flex;
+    list-style: none;
+}
+
+.link_top {
+    text-decoration: none;
+    font-family: var(--n400);
+    font-size: 14px;
+    line-height: 70px;
+    color: var(--white);
+    margin-left: 33px;
+
+}
+
+.header_top {
+    background-color: var(--blackk);
+    width: 100%;
+    height: 50px;
+}
+
+.iconka i {
+    margin-right: 8px;
+}
+
+.iconka {
+    font-family: var(--n400);
+    font-size: 14px;
+
+
+    color: var(--white);
+    margin-left: 25px;
+}
+
+.eng {
+    font-family: var(--n400);
+    font-size: 14px;
+
+    color: var(--white);
+    margin-right: 100px;
+}
+
+.form-w {
+    width: 70%;
+    height: 50px;
+    border-radius: 0px;
+    font-family: var(--n400);
+    font-size: 14px;
+    color: #BBBBBB;
+    border: 1px solid var(--blackk);
+
+}
+
+.button-w {
+    width: 30%;
+    height: 50px;
+    background-color: var(--blackk);
+    font-family: var(--n400);
+    color: var(--white);
+    font-style: 14px;
+    line-height: 19px;
+    padding: 0;
+    border-radius: 0px;
+    border: 1px solid var(--blackk);
+}
+
+.button-w i {
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.formm {
+    max-width: 690px;
+    width: 100%;
+    height: 50px;
+}
+
+.list {
+    list-style: none;
+
+}
+
+.link {
+    font-family: var(--n400);
+    color:var(--blackk);
+    margin-right: 30px;
+}
+
+.menu {
+    width: 35px;
+    height: 4px;
+ 
+    position: relative;
+    border-radius: 10px;
+}
+
+
+.menu::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--blackk);
+    top: 10px;
+    left: 0;
+    border-radius: 10px;
+    transition: 0.5S;
+
+}
+
+.menu::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--blackk);
+    top: -10px;
+    left: 0;
+    border-radius: 10px;
+    transition: 0.5S;
+
+}
+
+.navbar-toggler:not(.collapsed) .menu::after{
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.navbar-toggler:not(.collapsed) .menu::before{
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.navbar-toggler.collapsed .menu{
+     background-color: var(--blackk);
+}
+.navbar-toggler:focus{
+    box-shadow: unset;
+}
