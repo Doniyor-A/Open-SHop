@@ -17,9 +17,11 @@ p {
     --n400: 'notosans-regural';
     --white: #ffffff;
     --blackk: #313131;
+    --dots: #ABABAB;
 
 
 }
+
 
 .list_top {
     display: flex;
@@ -106,7 +108,13 @@ p {
 .link {
     font-family: var(--n400);
     color:var(--blackk);
-    margin-right: 30px;
+    margin-right: 20px;
+    
+
+}
+.iconka{
+    padding: 0 !important;
+
 }
 
 .menu {
@@ -159,4 +167,63 @@ p {
 }
 .navbar-toggler:focus{
     box-shadow: unset;
+}
+/* intro start */
+.intro{
+    padding-top: 50px;
+}
+.intro_descr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.intro_title{
+    font-family: var(--n400);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 70px;
+    color: var(--blackk);
+    letter-spacing: 0.05em;
+    width: 624px;
+    margin-bottom: 121px;
+    text-align: center;
+}
+.intro_btn{
+    width: 190px;
+    height: 50px;
+    background-color: var(--blackk);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--n400);
+    color:var(--white);
+    font-size: 18px;
+    text-decoration: none;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.404);
+    border-radius: 5px;
+    transition: 0.5s;
+
+}
+.intro_btn:hover{
+    background-color: var(--white);
+    color: var(--blackk);
+}
+.carousel-indicators{
+    margin: 0;
+    column-gap: 15px;
+    position: static;
+    margin-top: 40px;
+}
+.carousel-indicators-dots{
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50%;
+    background-color: var(--dots) !important;
+    transition: 0.5s !important;
+
+
+}
+.carousel-indicators-dots.active{
+    background-color: var(--blackk) !important;
+    transform: scale(1.2);
 }
