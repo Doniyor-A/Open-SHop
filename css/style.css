@@ -13,6 +13,16 @@ p {
     padding: 0;
 }
 
+*::-webkit-scrollbar {
+    width: 5px;
+    height: 3px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--blackk);
+    border-radius: 25%;
+}
+
 :root {
     --n400: 'notosans-regural';
     --white: #ffffff;
@@ -107,12 +117,13 @@ p {
 
 .link {
     font-family: var(--n400);
-    color:var(--blackk);
+    color: var(--blackk);
     margin-right: 20px;
-    
+
 
 }
-.iconka{
+
+.iconka {
     padding: 0 !important;
 
 }
@@ -120,7 +131,7 @@ p {
 .menu {
     width: 35px;
     height: 4px;
- 
+
     position: relative;
     border-radius: 10px;
 }
@@ -152,32 +163,36 @@ p {
 
 }
 
-.navbar-toggler:not(.collapsed) .menu::after{
+.navbar-toggler:not(.collapsed) .menu::after {
     transform: rotate(45deg);
     top: 0;
 }
 
-.navbar-toggler:not(.collapsed) .menu::before{
+.navbar-toggler:not(.collapsed) .menu::before {
     transform: rotate(-45deg);
     top: 0;
 }
 
-.navbar-toggler.collapsed .menu{
-     background-color: var(--blackk);
+.navbar-toggler.collapsed .menu {
+    background-color: var(--blackk);
 }
-.navbar-toggler:focus{
+
+.navbar-toggler:focus {
     box-shadow: unset;
 }
+
 /* intro start */
-.intro{
+.intro {
     padding-top: 50px;
 }
-.intro_descr{
+
+.intro_descr {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.intro_title{
+
+.intro_title {
     font-family: var(--n400);
     font-size: 48px;
     font-weight: 600;
@@ -188,7 +203,8 @@ p {
     margin-bottom: 121px;
     text-align: center;
 }
-.intro_btn{
+
+.intro_btn {
     width: 190px;
     height: 50px;
     background-color: var(--blackk);
@@ -196,7 +212,7 @@ p {
     justify-content: center;
     align-items: center;
     font-family: var(--n400);
-    color:var(--white);
+    color: var(--white);
     font-size: 18px;
     text-decoration: none;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.404);
@@ -204,17 +220,20 @@ p {
     transition: 0.5s;
 
 }
-.intro_btn:hover{
+
+.intro_btn:hover {
     background-color: var(--white);
     color: var(--blackk);
 }
-.carousel-indicators{
+
+.carousel-indicators {
     margin: 0;
     column-gap: 15px;
     position: static;
     margin-top: 40px;
 }
-.carousel-indicators-dots{
+
+.carousel-indicators-dots {
     width: 15px !important;
     height: 15px !important;
     border-radius: 50%;
@@ -223,7 +242,432 @@ p {
 
 
 }
-.carousel-indicators-dots.active{
+
+.carousel-indicators-dots.active {
     background-color: var(--blackk) !important;
     transform: scale(1.2);
+}
+
+/* catalog start */
+.electro {
+    padding-top: 50px;
+}
+
+.watch-2 {
+    background: url(../img/watch-2.png);
+    background-repeat: no-repeat;
+    max-width: 630px;
+    width: 100%;
+
+
+    height: 500px;
+    background-color: #F9F9F9;
+    position: relative;
+}
+
+.watch_text {
+    font-family: var(--n400);
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    color: var(--blackk);
+    position: absolute;
+    bottom: 55px;
+    left: 22px;
+}
+
+.watch_70 {
+    font-family: var(--n400);
+    font-weight: 300;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    color: var(--blackk);
+    bottom: 15px;
+    left: 20px;
+    position: absolute;
+
+}
+
+.watch_57 {
+    font-family: var(--n400);
+    color: var(--white);
+    letter-spacing: 0.05em;
+    font-size: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--blackk);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.row{
+    --bs-gutter-x: 0 !important;
+}
+.airpots {
+    position: relative;
+    background: url(../img/airpods.png);
+    height: 235px;
+    width: 630px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+
+
+
+
+}
+.ddd{
+    max-width: 630px;
+   
+}
+.dddd{
+    max-width: 630px;
+    height: 500px;
+}
+.air_text {
+    font-family: var(--n400);
+    font-size: 20px;
+    color: var(--white);
+    letter-spacing: 0.05em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: var(--blackk);
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.air_title {
+    font-family: var(--n400);
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--blackk);
+    letter-spacing: 0.05em;
+    position: absolute;
+    left: 20px;
+    bottom: 55px;
+}
+
+.air_95 {
+    font-family: var(--n400);
+    color: var(--blackk);
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    position: absolute;
+    left: 20px;
+    bottom: 15px;
+
+}
+
+.xiaomi {
+    background: url(../img/powerbank.png);
+   max-width: 300px;
+   width: 100%;
+    height: 235px;
+    background-color: #F9F9F9;
+    position: relative;
+
+
+}
+
+.xiaomi_text {
+    font-family: var(--n400);
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--blackk);
+    letter-spacing: 0.05em;
+    line-height: 30px;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+
+.xiaomi_9 {
+    font-family: var(--n400);
+    color: var(--blackk);
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    position: absolute;
+    left: 20px;
+    top: 73px;
+}
+
+.xiaomi_20 {
+    font-family: var(--n400);
+    color: var(--white);
+    letter-spacing: 0.05em;
+    font-size: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--blackk);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+
+}
+
+.remax {
+    background: url(../img/foto.png);
+    max-width: 297px;
+    width: 100%;
+    height: 235px;
+    background-color: #F9F9F9;
+    ;
+    position: relative;
+}
+
+.remax_text {
+    font-family: var(--n400);
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--blackk);
+    letter-spacing: 0.05em;
+    line-height: 30px;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+
+.remax_11 {
+    font-family: var(--n400);
+    color: var(--blackk);
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    position: absolute;
+    left: 20px;
+    top: 55px;
+
+}
+
+.remax_10 {
+    font-family: var(--n400);
+    color: var(--white);
+    letter-spacing: 0.05em;
+    font-size: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--blackk);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+
+
+.iphone_title {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    color: var(--blackk);
+}
+
+.iphone_text {
+    font-family: var(--n400);
+    font-size: 16px;
+    color: var(--blackk);
+    position: absolute;
+
+    bottom: 52px;
+}
+
+.money {
+    font-family: var(--n400);
+    font-size: 14px;
+    color: var(--blackk);
+    position: absolute;
+    bottom: 28px;
+    right: 129px;
+
+}
+
+.iphone_item {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+    position: relative;
+
+}
+
+.cell {
+   padding-top: 70px;
+}
+
+.iphone_box {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    
+    overflow-x: hidden;
+    overflow: auto
+}
+
+.btn_link {
+    width: 190px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blackk);
+    color: var(--white);
+    font-family: var(--n400);
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.btn_komp{
+   margin-top: 30px;
+   margin-bottom: 70px;
+
+}
+.komp_text{
+    bottom: 41px;
+}
+.komp_money{
+    bottom: 17px;
+}
+.computers{
+    padding-top: 70px;
+}
+.ps5{
+    background-image: url(../img/ps5-2.png);
+     height: 500px;
+     position: relative;
+     background-position: center;
+    
+     
+    
+
+}
+.ps5_img{
+    position: absolute;
+    top: 94px;
+    left: 20px;
+}
+.ps5_title{
+    font-family: var(--n400);
+    font-weight: 600;
+    color: var(--blackk);
+    font-size: 48px;
+    position: absolute;
+    top: 185px;
+    left: 20px;
+    line-height: 65px;
+    
+}
+.ps5_btn{
+    position: absolute;
+    bottom: 130px;
+    left: 20px;
+
+}
+.items img{
+    height: 300px;
+   max-width: 300px;
+   width: 100%;
+}
+.items{
+    position: relative;
+    
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.items_title{
+    position: absolute;
+    bottom: 39px
+}
+.items_mone{
+    position: absolute;
+    bottom: 15px;
+}
+.seller_title{
+    margin: 70px 0px 30px 0px;
+}
+.seller_btn{
+   margin-top: 42px;
+   margin-bottom: 80px;
+}
+.btn_link:hover{
+    color: var(--blackk);
+    background-color: var(--white);
+    transform: scale(1.1);
+
+}
+.btn_link{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5),
+    0px 0px 12px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+.footer{
+    background-color: var(--blackk);
+    
+    padding-top: 30px;
+    padding-bottom: 45px;
+
+}
+.footer_form{
+    max-width: 520px;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    
+}
+.footer_form::after{
+    content: 'Subscribe to Newslatter';
+    position: absolute;
+    font-family: var(--n400);
+    font-size: 18px;
+    color:var(--white);
+    left: 0;
+    top: -30px
+
+}
+.footer_button{
+   border: 1px solid white;
+   width: 40%;
+}
+.footer_input{
+    border: 1px solid white;
+    width: 60%;
+}
+.footer_icons i{
+    font-size: 41px;
+    color: var(--white);
+   margin: 0 15px;
+    
+}
+.navv_text{
+    color: var(--white);
+    font-size: 18px;
+   margin: 0 15px;
+}
+.footer_nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
 }
