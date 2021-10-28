@@ -259,7 +259,7 @@ p {
     max-width: 630px;
     width: 100%;
 
-
+    background-position: center;
     height: 500px;
     background-color: #F9F9F9;
     position: relative;
@@ -304,14 +304,16 @@ p {
     top: 20px;
     left: 20px;
 }
-.row{
+
+.row {
     --bs-gutter-x: 0 !important;
 }
+
 .airpots {
     position: relative;
     background: url(../img/airpods.png);
     height: 235px;
-    width: 630px;
+    background-position: center;
     padding: 0;
     margin: 0;
     margin-bottom: 30px;
@@ -320,14 +322,17 @@ p {
 
 
 }
-.ddd{
+
+.ddd {
     max-width: 630px;
-   
+
 }
-.dddd{
+
+.dddd {
     max-width: 630px;
     height: 500px;
 }
+
 .air_text {
     font-family: var(--n400);
     font-size: 20px;
@@ -369,8 +374,8 @@ p {
 
 .xiaomi {
     background: url(../img/powerbank.png);
-   max-width: 300px;
-   width: 100%;
+    max-width: 300px;
+    width: 100%;
     height: 235px;
     background-color: #F9F9F9;
     position: relative;
@@ -503,18 +508,47 @@ p {
     height: 300px;
     flex-shrink: 0;
     position: relative;
+    overflow: hidden;
 
 }
 
+.buy {
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--blackk);
+    font-family: var(--n400);
+    font-size: 14px;
+    text-decoration: none;
+    position: absolute;
+    transition: 0.6s;
+    border-bottom: 2px solid;
+    bottom: -40px;
+
+}
+
+.iphone_item:hover .buy {
+    bottom: 170px;
+}
+
+.buy:focus {
+    border-color: #9b59b6;
+    color: #9b59b6;
+}
+
 .cell {
-   padding-top: 70px;
+    padding-top: 70px;
 }
 
 .iphone_box {
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
-    
+
     overflow-x: hidden;
     overflow: auto
 }
@@ -535,36 +569,43 @@ p {
     margin: 0 auto;
     margin-top: 60px;
 }
-.btn_komp{
-   margin-top: 30px;
-   margin-bottom: 70px;
+
+.btn_komp {
+    margin-top: 30px;
+    margin-bottom: 70px;
 
 }
-.komp_text{
+
+.komp_text {
     bottom: 41px;
 }
-.komp_money{
+
+.komp_money {
     bottom: 17px;
 }
-.computers{
+
+.computers {
     padding-top: 70px;
 }
-.ps5{
+
+.ps5 {
     background-image: url(../img/ps5-2.png);
-     height: 500px;
-     position: relative;
-     background-position: center;
-    
-     
-    
+    height: 500px;
+    position: relative;
+    background-position: center;
+
+
+
 
 }
-.ps5_img{
+
+.ps5_img {
     position: absolute;
     top: 94px;
     left: 20px;
 }
-.ps5_title{
+
+.ps5_title {
     font-family: var(--n400);
     font-weight: 600;
     color: var(--blackk);
@@ -573,22 +614,25 @@ p {
     top: 185px;
     left: 20px;
     line-height: 65px;
-    
+
 }
-.ps5_btn{
+
+.ps5_btn {
     position: absolute;
     bottom: 130px;
     left: 20px;
 
 }
-.items img{
+
+.items img {
     height: 300px;
-   max-width: 300px;
-   width: 100%;
+    max-width: 300px;
+    width: 100%;
 }
-.items{
+
+.items {
     position: relative;
-    
+
     height: 300px;
     display: flex;
     justify-content: center;
@@ -596,78 +640,165 @@ p {
 
 }
 
-.items_title{
+.items_title {
     position: absolute;
     bottom: 39px
 }
-.items_mone{
+
+.items_mone {
     position: absolute;
     bottom: 15px;
 }
-.seller_title{
+
+.seller_title {
     margin: 70px 0px 30px 0px;
 }
-.seller_btn{
-   margin-top: 42px;
-   margin-bottom: 80px;
+
+.seller_btn {
+    margin-top: 42px;
+    margin-bottom: 80px;
 }
-.btn_link:hover{
+
+.btn_link:hover {
     color: var(--blackk);
     background-color: var(--white);
     transform: scale(1.1);
 
 }
-.btn_link{
+
+.btn_link {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5),
-    0px 0px 12px rgba(0, 0, 0, 0.5);
+        0px 0px 12px rgba(0, 0, 0, 0.5);
     transition: 0.5s;
 }
-.footer{
+
+.footer {
     background-color: var(--blackk);
-    
+
     padding-top: 30px;
     padding-bottom: 45px;
 
 }
-.footer_form{
+
+.footer_form {
     max-width: 520px;
     width: 100%;
     height: 50px;
     position: relative;
-    
+
 }
-.footer_form::after{
+
+.footer_form::after {
     content: 'Subscribe to Newslatter';
     position: absolute;
     font-family: var(--n400);
     font-size: 18px;
-    color:var(--white);
+    color: var(--white);
     left: 0;
     top: -30px
+}
 
+.footer_button {
+    border: 1px solid white;
+    width: 40%;
 }
-.footer_button{
-   border: 1px solid white;
-   width: 40%;
-}
-.footer_input{
+
+.footer_input {
     border: 1px solid white;
     width: 60%;
 }
-.footer_icons i{
+
+.footer_icons i {
     font-size: 41px;
     color: var(--white);
-   margin: 0 15px;
-    
+    margin: 0 15px;
+
 }
-.navv_text{
+
+.navv_text {
     color: var(--white);
     font-size: 18px;
-   margin: 0 15px;
+    margin: 0 15px;
 }
-.footer_nav{
+
+.footer_nav {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+
+}
+
+
+
+
+/* iphone.html start */
+.iphones{
+    padding-bottom: 300px;
+}
+.row-box{
+    margin-top: 70px;
+
+}
+.apple_title {
+    font-weight: 600;
+    font-size: 30px;
+    color: #000000;
+    letter-spacing: 0.05em;
+}
+
+.apple_money, .apple_text {
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    color: #000000;
+
+}
+.apple_text{
+    margin-bottom: 10px;
+}
+.apple_money{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.apple_link{
+ 
+    text-decoration: none;
+    color: #000000d7;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight:500;
+    letter-spacing: 0.05em;
+}
+.apple_btn{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
     
 }
+.btn-lnk{
+    width: 190px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blackk);
+    color: var(--white);
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.4s;
+    
+}
+.btn-lnk i{
+    font-size: 17px;
+    margin-right: 11px;
+}
+.btn-lnk:hover{
+    color: crimson;
+    border-bottom: 2px solid crimson;
+}
+
+/* iphone.html end */

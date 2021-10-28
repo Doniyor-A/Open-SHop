@@ -27,12 +27,33 @@ body{
 }
 @media(max-width:450px){
     .intro_title{
-        font-size: 34px;
+        font-size: 30px;
         width: 380px;
+        margin-bottom: 80px;
     }
     .intro_btn{
         width: 160px;
         height: 42px;
       font-size: 17px;
+    }
+}
+@media(max-width:400px){
+    .intro_title{
+        width: 310px;
+        font-size: 28px;
+    }
+    .button-w{
+        font-size: 13px;
+    }
+}
+@media(max-width:425px){
+    .a-img{
+        width: 100%;
+    }
+}
+@media(max-width:432px){
+    .apple_btn{
+        gap: 11px;
+        justify-content: center;
     }
 }
